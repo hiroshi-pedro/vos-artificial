@@ -1,0 +1,97 @@
+body {
+  background-color: #282a36;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #44475a;
+  border-radius: 5px;
+  background-color: #44475a;
+  color: #f8f8f2;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #6272a4;
+  border-radius: 4px;
+  background-color: #44475a;
+  color: #f8f8f2;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #6272a4;
+  border-radius: 4px;
+  background-color: #44475a;
+  color: #f8f8f2;
+}
+
+input[type="range"] {
+  width: 100%;
+  background-color: #44475a;
+}
+
+input[type="submit"], input[type="button"] {
+  width: 100%;
+  background-color: #ff5555;
+  color: #f8f8f2;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #ff7979;
+}
+
+.rate-value, .pitch-value {
+  margin-left: 10px;
+}
+
+/* Layout para telas menores */
+@media only screen and (max-width: 600px) {
+  form {
+    width: 80%;
+  }
+}
+
+/* Layout para telas médias */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  form {
+    width: 60%;
+  }
+}
+
+/* Layout para telas grandes */
+@media only screen and (min-width: 900px) {
+  form {
+    width: 50%;
+  }
+}
